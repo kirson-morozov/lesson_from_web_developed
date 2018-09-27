@@ -43,6 +43,33 @@ btn1.addEventListener("click", addItem);
 btn2.addEventListener("click", delItem);
 close.addEventListener("click", closePopup);
 
+//Проверка возраста пользователя и подписки
+var age, name, subScription;
+
+age = prompt("Сколько вам лет", 18);
+
+	if (age>=18) {
+		
+		subScription = confirm("Вы подписаны на рассылку?")
+		if (subScription == true) {
+				userTest();
+		}
+		else {
+			alert("Доступ запрещен!")	
+		}
+
+	}
+
+	else {
+		alert("Доступ запрещен!")
+	}
+function userTest() {
+
+	console.log("Пользователь допущен!");
+	alert("Доступ разрешен!")	
+
+}
+
 
 
 
