@@ -1,0 +1,86 @@
+.section_cardboard
+	position: relative
+	padding: 65px 0 77px 0
+	background: #373737 url(../img/cardboard/bg-cardboard.png) center no-repeat
+	background-size: cover
+	z-index: 2
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		z-index: 0
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(0, 0, 0, 0.8)
+	&__img
+		margin-left: -105px
+		position: relative
+		&::before
+			content: ''
+			display: inline-block
+			position: absolute
+			z-index: -1
+			width: 433px
+			height: 433px
+			border-radius: 50%
+			border: 1px solid #ffffff
+			top: 5%
+			left: 23%
+		&::after
+			content: ''
+			display: inline-block
+			position: absolute
+			bottom: 0
+			left: 22%
+			width: 60px
+			height: 50px 
+			z-index: 1
+			background: url(../img/cardboard/logo-rostest.png)
+			background-size: cover
+	&__desc
+		&___title
+			color: $text-color-light
+			font-size: 42px
+			font-weight: 700
+			margin-bottom: 15px
+		&___subtitle
+			color: $text-color-light
+			font-size: 28px
+			font-weight: 400
+			margin-bottom: 24px
+.section_cardboard__form
+	background-color: rgba(255, 255, 255, 0.2)
+	padding: 30px 27px
+	border-radius: 2px
+	&___title
+		font-size: 20px
+		font-weight: 300
+		line-height: 30px
+		color: $text-color-light
+		margin-bottom: 5px
+	&___free
+		font-size: 20px
+		font-weight: 700
+		text-transform: uppercase
+		color: $text-color-light
+	&___small
+		padding-left: 19px
+		font-size: 14px
+		font-weight: 300
+		line-height: 30px
+		color: $text-color-light
+.form
+	padding-top: 20px
+	margin-bottom: 12px
+	&_tel
+		font-size: 14px
+		border-radius: 5px
+		padding: 21px 130px 21px 19px
+		border: none
+.button_big
+	padding: 17.5px 20px
+	font-size: 15px
+	font-weight: 500
+	margin-left: 10px
